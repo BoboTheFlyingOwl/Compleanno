@@ -1,0 +1,195 @@
+body {
+
+    width: 100%;
+    height: 100%;
+    --color: #283618;
+    background: linear-gradient(95deg, var(--color) 25%, transparent 25%) -50px 0,
+        linear-gradient(-15deg, var(--color) 25%, transparent 25%) -50px 0,
+        linear-gradient(25deg, transparent 75%, var(--color) 75%) -50px 0,
+        linear-gradient(-45deg, transparent 75%, var(--color) 75%) -50px 0,
+        linear-gradient(-15deg, transparent 75%, var(--color) 75%) -50px 0;
+    background-color: #606c38;
+    background-size: 35px 35px;
+
+}
+
+.mainpage {
+
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+.Contenuto {
+    background-color: #bc6c25;
+    padding: 1% 0%;
+}
+
+.pageTitle {
+    font-size: larger;
+    text-align: center;
+
+}
+
+.pageTitle img {
+    width: 100%;
+}
+
+
+.topMainPage {
+    /*background-color: yellow;*/
+    margin-bottom: 20px;
+
+}
+
+
+
+.pageSubTitle {
+    margin: 20px;
+}
+
+.pageSubTitle a {
+    background-color: #fefae0;
+    padding: 10px;
+    margin: 5px;
+    border: 4px solid #dda15e;
+    color: #181818;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+
+
+.Slot {
+    border: 4px solid #dda15e;
+    background-color: #fefae0;
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+
+
+    /*QUESTO*/
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.MovimentoPezzo img,
+.ImmPezzo img {
+    max-width: 100%;
+    /* Assicura che le immagini non superino la larghezza del loro contenitore */
+    height: auto;
+    /* Imposta l'altezza in base alla larghezza per mantenere l'aspect ratio */
+    display: block;
+    /* Assicura che le immagini non influenzino il layout degli elementi circostanti */
+    margin: auto;
+    /* Centra l'immagine orizzontalmente all'interno del suo contenitore */
+    border-radius: 20px;
+
+
+}
+
+.MovimentoPezzo {
+    width: 15%;
+
+}
+
+.ImmPezzo {
+    width: 15%;
+
+}
+
+.TopRules {
+    background-color: #fefae0;
+    margin: 20px;
+    padding: 2% 4%;
+    border-radius: 20px;
+    border: 4px solid #dda15e;
+
+}
+
+.BotRules {
+    background-color: #fefae0;
+    margin: 20px;
+    padding: 2% 4%;
+    border-radius: 20px;
+    border: 4px solid #dda15e;
+}
+
+
+.OtherRules {
+    margin: 0%;
+    column-count: 2;
+    /* Imposta il numero di colonne */
+    column-gap: 20px;
+    /* Spazio tra le colonne */
+    clear: both;
+}
+
+.TitleOtherRules {
+    font-size: larger;
+    background-color: #606c38;
+    color: #fefae0;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 4px;
+    border: 3px solid #283618;
+
+    margin: 20px 15px 0px 0px;
+
+    /* Aggiunta per allineare correttamente i titoli */
+    display: inline-block;
+    vertical-align: top;
+    clear: both;
+    /* Impedisce che l'elemento sia affetto dal float degli elementi adiacenti */
+
+}
+
+.Descrizione {
+
+    padding: 3%;
+    flex-grow: 1;
+    width: 20%;
+}
+
+.NomePezzo {
+    font-size: large;
+    margin-left: 20%;
+}
+
+.DescrizionePezzo {
+    font-size: medium;
+
+}
+
+.PosizioneIniziale {
+    background-color: #bc6c25;
+    display: flex;
+}
+
+.immaginiPosizione {
+
+
+    padding: 10px;
+    background-color: #fefae0;
+    width: 70%;
+    margin-left: 20px;
+    border-radius: 25px;
+
+}
+
+.AltreInfo {
+
+    flex: auto;
+
+    padding: 10px;
+    background-color: #fefae0;
+    margin-right: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 4px solid #dda15e;
+
+}

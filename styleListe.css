@@ -1,0 +1,110 @@
+.lista {
+    margin: 20px;
+}
+
+.elemento {
+    display: flex;
+    /*align-items: center;*/
+    margin-bottom: 20px;
+    border: 4px solid #dda15e;
+    background-color: #fefae0;
+    border-radius: 20px;
+}
+
+.immagineLista {
+    width: 20%;
+    height:fit-content;
+    padding: 20px;
+    border-radius: 20%;
+    align-self: center;
+}
+
+.testoLista {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.titloloLista{
+    border: 3px solid #283618;
+    background-color: #606c38;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.descrizioneLista{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.linkLista{
+    margin-top: 20px;
+    color: #fefae0;
+}
+
+.linkLista a{
+    background-color: #606c38;
+    padding: 10px;
+    margin: 5px;
+    border: 4px solid #283618;
+    color: #181818;
+    border-radius: 20px;
+    width: fit-content;
+}
+.linkLista a:hover{
+    background-color: #626657;
+    border: 4px solid #2b2c2a;
+}
+
+
+.topInfo{
+    background-color: #fefae0;
+        margin: 20px;
+        padding: 2% 4%;
+        border-radius: 20px;
+        border: 4px solid #dda15e;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descrizione {
+    width: 20%;
+}
+
+form {
+    width: 60%;
+    text-align: center;
+}
+
+.leftWord{
+    width: 20%;
+    text-align: center;
+}
+
+.topWordIs{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+        
+}
+.secretWord{
+    display: block;
+        margin: 0 auto;
+       
+}
+
+
+input[type="text"]{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}

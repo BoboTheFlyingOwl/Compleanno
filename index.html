@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Compleanno</title>
+</head>
+
+<body>
+    <div class="mainpage">
+
+        <div class="topMainPage">
+            <div class="pageTitle">
+                <img src="Img/TitleTop2.png">
+            </div>
+
+            <div class="pageSubTitle">
+                <a href="cards.html"> Storie </a>
+                <a href="liste.html"> Liste</a>
+            </div>
+
+        </div>
+
+        <div class="Contenuto">
+            <div class="TopRules">
+                <div class="OtherRules">
+                    <div class="TitleOtherRules">
+                        Introduzione
+                    </div>
+                    <div class="TextOtherRules">
+                        Benvenuti al gioco del Tactix, un gioco ispirato al classico giapponese dello shogi con alcune
+                        variazioni nelle
+                        tipologie di pezzi. In questo gioco, i giocatori si sfideranno utilizzando una combinazione di
+                        abilità tattiche e
+                        strategiche per catturare e mettere sotto scacco il re avversario.
+                    </div>
+                    <div class="TitleOtherRules">
+                        Setup del Gioco
+                    </div>
+
+                    <div class="TextOtherRules">
+                        Il gioco si svolge su una scacchiera quadrata di 9x9 caselle, simile a quella dello shogi
+                        tradizionale. Ogni giocatore
+                        ha un esercito composto da 10 tipologie di pezzi diversi:
+
+                        <img src="Img/PosizioneIniziale_Tactix.png" class="immaginiPosizione">
+                        
+                    </div>
+                    <div class="TitleOtherRules">
+                        Obiettivo del Gioco
+                    </div>
+
+                    <div class="TextOtherRules">
+                        Lo scopo del gioco è mettere sotto scacco matto il re avversario, impedendogli di fare mosse
+                        legali
+                        per evitare lo
+                        scacco. Il primo giocatore che riesce a mettere sotto scacco matto il re avversario vince la
+                        partita.
+                    </div>
+                    <div class="TitleOtherRules">
+                        Regole di Movimento
+                    </div>
+
+                    <div class="TextOtherRules">
+                        I pezzi si muovono seguendo le regole specifiche per ciascun tipo di pezzo, che possono variare.
+                        Ogni tipo di pezzo ha un diverso schema di movimento e di cattura. I pezzi non possono scavalcare gli altri pezzi durante il loro movimento.
+                    </div>
+
+                    <div class="TitleOtherRules">
+                        Regole di Cattura
+                    </div>
+
+                    <div class="TextOtherRules">
+                        I pezzi possono catturare i pezzi avversari muovendosi sulla casella occupata da un pezzo
+                        avversario. Una volta
+                        catturato, il pezzo avversario viene rimosso dal gioco e può essere posizionato nella riserva
+                        del
+                        giocatore che lo ha
+                        catturato.Il giocatore puà applicare la "drop rule".
+                    </div>
+
+                    <div class="TitleOtherRules">
+                        Fine del Gioco
+                    </div>
+                    <div class="TextOtherRules">
+                        Il gioco termina quando uno dei giocatori mette sotto scacco matto il re avversario o quando si
+                        verifica una situazione
+                        di pareggio, come lo "eterno scacco".
+                    </div>
+                </div>
+            </div>
+
+       
+
+            <div style="font-size: larger;
+    background-color: #606c38;
+    color: #fefae0;
+    width:fit-content;
+    border-radius: 10px;
+    padding: 4px;
+    border: 3px solid #283618;
+   
+    margin: 20px 15px 0px 0px;
+    display: flex; 
+    align-items: center; 
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;">
+                Regole di movimento e cattura
+            </div>
+
+            <div class="Slot">
+                <div class="MovimentoPezzo">
+                    <img src="Img/pezzo1.png">
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Coltello
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti di una casella.</li>
+                            <li><b>Cattura</b>: Cattura avanti e in diagonale avanti.</li>
+                        </ul>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Coltello d'oro
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti di una casella e in diagonale indietro.</li>
+                            <li><b>Cattura</b>: Cattura avanti e in diagonale di una casella.</li>
+                        </ul>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="ImmPezzo">
+                    <img src="Img/ZoomPezzi/zp1.png">
+                </div>
+            </div>
+
+            <div class="Slot">
+                <div class="MovimentoPezzo">
+                    <img src="Img/pezzo2.png">
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Arco
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti o diagonale indietro di una casella.</li>
+                            <li><b>Cattura</b>: Cattura in avanti di due caselle.</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Arco d'oro
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti di una casella in diagonale indietro fino a due
+                                caselle, a destra e a sinistra di due caselle</li>
+                            <li><b>Cattura</b>: Cattura in avanti, a destra e a sinistra di due caselle.</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="ImmPezzo">
+                    <img src="Img/ZoomPezzi/zp2.png">
+                </div>
+            </div>
+
+            <div class="Slot">
+                <div class="MovimentoPezzo">
+                    <img src="Img/pezzo3.png">
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Lancia
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>:Si muove in avanti di un numero illimitato di caselle.</li>
+                            <li><b>Cattura</b>: Cattura come il movimento.</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Lancia
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>:Si muove in avanti di un numero illimitato di caselle, indietro e in
+                                diagonale indietro fino a due caselle.</li>
+                            <li><b>Cattura</b>: Cattura come il movimento.</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="ImmPezzo">
+                    <img src="Img/ZoomPezzi/zp3.png">
+                </div>
+            </div>
+
+            <div class="Slot">
+                <div class="MovimentoPezzo">
+                    <img src="Img/pezzo4.png">
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Alabarda
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti di una casella o in diagonale di due.</li>
+                            <li><b>Cattura</b>: Cattura come il movimento.</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Alabarda
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti di una casella o in diagonale di due.</li>
+                            <li><b>Cattura</b>: Cattura come il movimento e a sinistra, a destra, indietro di una
+                                casella.</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+                <div class="ImmPezzo">
+                    <img src="Img/ZoomPezzi/zp4.png">
+                </div>
+            </div>
+
+            <div class="Slot">
+                <div class="MovimentoPezzo">
+                    <img src="Img/pezzo5.png">
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Scudo
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti fino a tre caselle o laterelmente al massimo di
+                                due.
+                            </li>
+                            <li><b>Cattura</b>: Cattura in avanti, a destra e a sinistra di una casella.</li>
+                            <li><b> Extra</b>: Non può essere catturato frontalmente</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Scudo
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti fino a tre caselle o laterelmente al massimo di
+                                due, indietro di due e poi a destra o sinistra di una casella.
+                            </li>
+                            <li><b>Cattura</b>: Cattura in avanti, a destra, a sinistra e indietro di una casella.</li>
+                            <li><b> Extra</b>: Non può essere catturato frontalmente</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+                <div class="ImmPezzo">
+                    <img src="Img/ZoomPezzi/zp5.png">
+                </div>
+            </div>
+
+            <div class="Slot">
+                <div class="MovimentoPezzo">
+                    <img src="Img/pezzo6.png">
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Spada
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti a destra a sinistra e in diagonale indietro di una
+                                casella.</li>
+                            <li><b>Cattura</b>: Cattura in diagonale in avanti di una casella e in avanti di due.</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Spada
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti a destra a sinistra e in diagonale indietro di una
+                                casella.</li>
+                            <li><b>Cattura</b>: Cattura in diagonale in avanti di una casella e in avanti di due, a
+                                destra e a sinistra di una casella.</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+                <div class="ImmPezzo">
+                    <img src="Img/ZoomPezzi/zp6.png">
+                </div>
+            </div>
+
+
+            <div class="Slot">
+                <div class="MovimentoPezzo">
+                    <img src="Img/pezzo7.png">
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Spada lunga
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti a destra a sinistra e indietro di una casella.
+                            </li>
+                            <li><b>Cattura</b>: Cattura avanti di una e avanti di due e a sinistra o destra di uno.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Spada lunga
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti a destra a sinistra e indietro di una casella.
+                            </li>
+                            <li><b>Cattura</b>: Cattura avanti di una e avanti di due e a sinistra o destra di uno, a
+                                destra e a sinistra di una casella.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="ImmPezzo">
+                    <img src="Img/ZoomPezzi/zp7.png">
+                </div>
+            </div>
+
+
+            <div class="Slot">
+                <div class="MovimentoPezzo">
+                    <img src="Img/pezzo8.png">
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Martello
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti a destra a sinistra e indietro fino a due caselle.
+                            </li>
+                            <li><b>Cattura</b>: Cattura come il movimento.</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Martello
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in avanti a destra a sinistra e indietro fino a due caselle,
+                                e in diagonale di una casella.
+                            </li>
+                            <li><b>Cattura</b>: Cattura come il movimento.</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+                <div class="ImmPezzo">
+                    <img src="Img/ZoomPezzi/zp8.png">
+                </div>
+            </div>
+
+            <div class="Slot">
+                <div class="MovimentoPezzo">
+                    <img src="Img/pezzo9.png">
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Falcione
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in diagonale fino a due caselle.
+                            </li>
+                            <li><b>Cattura</b>: Cattura come il movimento.</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Falcione
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in diagonale fino a due caselle, in avanti, a destra, a
+                                sinistra e indietro di una casella.
+                            </li>
+                            <li><b>Cattura</b>: Cattura come il movimento.</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+                <div class="ImmPezzo">
+                    <img src="Img/ZoomPezzi/zp9.png">
+                </div>
+            </div>
+
+
+            <div class="Slot">
+                <div class="MovimentoPezzo">
+                    <img src="Img/pezzo10.png">
+                </div>
+
+                <div class="Descrizione">
+                    <div class="NomePezzo">
+                        Re
+                    </div>
+                    <div class="DescrizionePezzo">
+                        <ul>
+                            <li><b>Movimento</b>: Si muove in ogni direzione di una casella.</li>
+                            <li><b>Cattura</b>: Cattura come movimento.</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+                <div class="ImmPezzo">
+                    <img src="Img/ZoomPezzi/zp10.png">
+                </div>
+            </div>
+
+            <div class="BotRules">
+                <div class="OtherRules">
+                    <div class="TitleOtherRules">
+                        Recupero
+                    </div>
+
+                    <div class="TextOtherRules">
+                        Quando un pezzo viene catturato, invece di essere eliminato completamente dal gioco, viene
+                        aggiunto
+                        alla riserva del
+                        giocatore che ha catturato il pezzo. Questa riserva è posta di fronte al giocatore in modo che
+                        entrambi i giocatori
+                        possano vedere quali pezzi sono stati catturati.
+
+                        Durante il proprio turno, invece di fare una mossa normale, un giocatore può scegliere di
+                        posizionare uno dei pezzi
+                        catturati dalla propria riserva su qualsiasi casella vuota del proprio campo di gioco (cioè
+                        sulla
+                        parte della scacchiera
+                        del proprio avversario).
+
+                        Quando un pezzo viene posizionato sulla scacchiera in questo modo, viene posizionato con il lato
+                        rivolto verso
+                        l'avversario per indicare che è un pezzo catturato che viene ripristinato.
+
+                        Il pezzo appena posizionato può essere utilizzato immediatamente come parte del gioco. Tuttavia,
+                        ci
+                        sono alcune
+                        restrizioni:
+                        <ul>
+                            <li>I pezzi non possono essere posizionati nelle file più esterne.</li>
+                            <li>I pezzi non possono essere posizionati in modo che possano dare subito scacco al re
+                                avversario.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="OtherRules">
+                    <div class="TitleOtherRules">
+                        Promozione
+                    </div>
+                    <div class="TextOtherRules">
+                        Nello Tactix, la regola della promozione riguarda i pezzi che possono avanzare di grado quando
+                        raggiungono determinate
+                        posizioni sulla scacchiera avversaria. Tutti i pezzi, eccetto il re, possono essere la promossi.
+                        Quando un pezzo raggiunge l'ultima fila.
+
+                        Quando un pezzo viene promosso viene girato e posizionato con il lato con la stella, ad indicare
+                        che il pezzo è stato promosso, d'ora in poi il pezzo ha ulteriori possibilità di movimento e di
+                        cattura.
+
+                        Quando un pezzo promosso viene catturato viene messo nella riserva non promosso.
+                    </div>
+                </div>
+
+                <div class="OtherRules">
+                    <div class="TitleOtherRules">
+                        Vittoria
+                    </div>
+
+                    <div class="TextOtherRules">
+                        Nello Tactix, lo "scacco" e lo "scacco matto" funzionano in modo simile agli scacchi, ma con
+                        alcune
+                        differenze. Ecco come
+                        funzionano:
+
+                        Scacco:
+                        Lo "scacco" in Tactix si verifica quando il re di un giocatore è sotto attacco da parte di uno o
+                        più
+                        pezzi avversari. Se
+                        il re è minacciato da una mossa legale dell'avversario, viene detto che è sotto scacco. Quando
+                        un
+                        giocatore mette il re
+                        avversario sotto scacco, è obbligatorio per l'avversario risolvere la minaccia altrimenti
+                        perderà la
+                        partita. Il
+                        giocatore può risolvere lo scacco muovendo il re in una posizione sicura, interponendo un pezzo
+                        tra
+                        il re e il pezzo
+                        avversario minaccioso, o catturando la pedina avversaria che minaccia lo scacco.
+
+                        Scacco matto:
+                        Lo "scacco matto" in Tactix si verifica quando il re di un giocatore è sotto scacco e non ci
+                        sono
+                        mosse legali che il
+                        giocatore può fare per risolvere lo scacco. In altre parole, il re è minacciato e non ci sono
+                        mosse
+                        disponibili che
+                        possono risolvere la minaccia. Quando si verifica uno scacco matto, la partita termina
+                        immediatamente e il giocatore il
+                        cui re è sotto scacco matto perde la partita.
+
+                        Inoltre, nello Tactix, se un giocatore non ha mosse legali disponibili e il re non è sotto
+                        scacco,
+                        si verifica una
+                        situazione chiamata "perpetual check" (eterno scacco) che porta al pareggio.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
