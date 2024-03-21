@@ -108,3 +108,15 @@ button {
     display: block;
     margin: 0 auto;
 }
+
+.TitoloSezione{
+    border: 3px solid #283618;
+    background-color: #606c38;
+    width: 20%;
+    border-radius: 20px;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}

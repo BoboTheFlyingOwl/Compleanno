@@ -21,7 +21,8 @@
 
             <div class="topInfo">
                 <div class="descrizione">
-                    Inserisci la parola segreta. Se la parola inserita è corretta apparira a destra come conferma altrimenti non apparirà nessuna parola.
+                    Inserisci la parola segreta. Se la parola inserita è corretta apparira a destra come conferma
+                    altrimenti non apparirà nessuna parola.
                 </div>
 
                 <form>
@@ -34,12 +35,18 @@
                         La parola segreta è:
                     </div>
                     <h1>
-                    <div class="secretWord" id="secretWord">
-                        
-                    </div></h1>
+                        <div class="secretWord" id="secretWord">
+
+                        </div>
+                    </h1>
                 </div>
             </div>
 
+
+
+            <div class="TitoloSezione" id="titoloSezione1">
+                BOARDGAME
+            </div>
             <!--BOARDGAME-->
             <div class="lista" id="boardGameList">
 
@@ -159,6 +166,12 @@
                 </div>
 
             </div>
+
+
+            <div class="TitoloSezione" id="titoloSezione2">
+                SWITCH
+            </div>
+
 
             <!--SWITCH-->
             <div class="lista" id="boardGameList2">
@@ -308,6 +321,12 @@
                 </div>
 
             </div>
+
+
+            <div class="TitoloSezione" id="titoloSezione3">
+                MANGA
+            </div>
+
 
             <!--MANGA-->
             <div class="lista" id="boardGameList3">
@@ -469,6 +488,12 @@
 
             </div>
 
+
+            <div class="TitoloSezione" id="titoloSezione4">
+                VARIE
+            </div>
+
+
             <!--VARIE-->
             <div class="lista" id="boardGameList4">
 
@@ -562,6 +587,12 @@
 
 
             </div>
+
+
+            <div class="TitoloSezione" id="titoloSezione5">
+                ISTANTGAMING
+            </div>
+
 
             <!--ISTANTGAMING-->
             <div class="lista" id="boardGameList5">
@@ -710,6 +741,11 @@
                 </div>
 
 
+            </div>
+
+
+            <div class="TitoloSezione" id="titoloSezione6">
+                EXTRA: BOARDGAME
             </div>
 
 
@@ -910,6 +946,12 @@
                 </div>
 
             </div>
+
+
+            <div class="TitoloSezione" id="titoloSezione7">
+                EXTRA: BOARDGAME
+            </div>
+
 
             <!--EXTRA(2)-->
             <div class="lista" id="boardGameList7">
@@ -1122,6 +1164,15 @@
     const lista6 = document.getElementById("boardGameList6");
     const lista7 = document.getElementById("boardGameList7");
 
+    const titolo1 = document.getElementById("titoloSezione1");
+    const titolo2 = document.getElementById("titoloSezione2");
+    const titolo3 = document.getElementById("titoloSezione3");
+    const titolo4 = document.getElementById("titoloSezione4");
+    const titolo5 = document.getElementById("titoloSezione5");
+    const titolo6 = document.getElementById("titoloSezione6");
+    const titolo7 = document.getElementById("titoloSezione7");
+
+
     let isValidWord = false; // Dichiarazione della variabile all'esterno della funzione
 
     // Funzione per controllare l'input e mostrare/nascondere le liste
@@ -1168,6 +1219,9 @@
             setAllNone();
             lista7.style.display = "block";
             isValidWord = true;
+        } else if (inputValue == "tactix") {
+            setAllVisile();
+            isValidWord = true;
         } else {
             // Non fare nulla
             setAllNone();
@@ -1182,6 +1236,23 @@
         }
     }
 
+    function setAllVisile() {
+        lista1.style.display = "block";
+        lista2.style.display = "block";
+        lista3.style.display = "block";
+        lista4.style.display = "block";
+        lista5.style.display = "block";
+        lista6.style.display = "block";
+        lista7.style.display = "block";
+
+        titolo1.style.display = "block";
+        titolo2.style.display = "block";
+        titolo3.style.display = "block";
+        titolo4.style.display = "block";
+        titolo5.style.display = "block";
+        titolo6.style.display = "block";
+        titolo7.style.display = "block";
+    }
     function setAllNone() {
         lista1.style.display = "none";
         lista2.style.display = "none";
@@ -1190,6 +1261,14 @@
         lista5.style.display = "none";
         lista6.style.display = "none";
         lista7.style.display = "none";
+        
+        titolo1.style.display = "none";
+        titolo2.style.display = "none";
+        titolo3.style.display = "none";
+        titolo4.style.display = "none";
+        titolo5.style.display = "none";
+        titolo6.style.display = "none";
+        titolo7.style.display = "none";
     }
 
     setAllNone();
