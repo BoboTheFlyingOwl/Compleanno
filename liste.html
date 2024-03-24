@@ -42,7 +42,56 @@
                 </div>
             </div>
 
+            <div class="hintSection" id="hint">
+                <!--H1 -> qualcosa sulle storie -->
+                <!--H2 -> qualcosa liste speciali (1) -->
+                <!--H3 -> qualcosa liste speciali (2) -->
+                <!--H4 -> Parola finale -->
+                <div class="hintTxt" id="hint0">
+                    Hint:
+                    <span class="tooltiptext">
+                        Per aiutare a capire le parole segrete saranno mostrate degli indizi ogni Lunedì per quattro settimane.
+                    </span>
+                </div>
 
+                <div class="hint" id="hint1">
+                    Storie
+                    <span class="tooltiptext">
+                        <ul>
+                            <li>Eldoria <strong>4</strong></li>
+                            <li>Neotropolis <strong>3</strong></li>
+                            <li>Alden <strong>3</strong></li>
+                            <li>Flauti <strong>4</strong></li>
+                            <li>Grifone <strong>2</strong></li>
+                        </ul>
+                    </span>
+                </div>
+
+                <div class="hint" id="hint2">
+                    Parole colorate (1)
+                    <span class="tooltiptext">
+                        I generali hanno dei gradi per le loro imprese, rappresentati dai colori. Non tutti hanno gli
+                        stessi colori. Prova a prendere tutti i colori uguali e usare i numeri per organizzarli.
+                    </span>
+                </div>
+
+                <div class="hint" id="hint3">
+                    Parole colorate (2)
+                    <span class="tooltiptext">
+                        L'ordine dei gradi è importante. Le operazioni non hanno significato, solo i numeri contano, ma
+                        il colore ?
+                    </span>
+                </div>
+
+                <div class="hint" id="hint4">
+                    L'ultima parola
+                    <span class="tooltiptext">
+                        Esiste una parola segreta nascosta in bella vista.
+                    </span>
+                </div>
+
+
+            </div>
 
             <div class="TitoloSezione" id="titoloSezione1">
                 BOARDGAME
@@ -1261,7 +1310,7 @@
         lista5.style.display = "none";
         lista6.style.display = "none";
         lista7.style.display = "none";
-        
+
         titolo1.style.display = "none";
         titolo2.style.display = "none";
         titolo3.style.display = "none";
@@ -1287,6 +1336,48 @@
             controllaInput(new Event('click')); // Simula il click sul pulsante per controllare l'input
         }
     });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Il tuo codice qui
+        function mostraHintDopoIl5Aprile() {
+            var dataOggi = new Date();
+            var data0Hint = new Date('2024-02-28');
+            var data1Hint = new Date('2024-03-01');
+            var data2Hint = new Date('2024-03-08');
+            var data3Hint = new Date('2024-03-15');
+            var data4Hint = new Date('2024-03-22');
+
+            console.log("Data odierna:", dataOggi);
+            console.log("Data hint 1:", data1Hint);
+            console.log("Data hint 2:", data2Hint);
+            console.log("Data hint 3:", data3Hint);
+            console.log("Data hint 4:", data4Hint);
+
+
+            // Funzione per gestire l'apertura degli hint in base alla data
+            function gestisciHint(dataHint, idHint) {
+                var hint = document.getElementById(idHint);
+                if (dataOggi >= dataHint) {
+                    hint.style.display = 'block';
+                } else {
+                    hint.style.display = 'none';
+                }
+            }
+
+            // Chiamata alla funzione per gestire gli hint
+            gestisciHint(data0Hint, 'hint0');
+            gestisciHint(data1Hint, 'hint1');
+            gestisciHint(data2Hint, 'hint2');
+            gestisciHint(data3Hint, 'hint3');
+            gestisciHint(data4Hint, 'hint4');
+        }
+
+        // Chiamata alla funzione al caricamento della pagina
+        mostraHintDopoIl5Aprile();
+    });
+
+
 
 </script>
 
